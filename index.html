@@ -25,7 +25,7 @@
   }
   body {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     min-height: 100vh;
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
@@ -449,7 +449,7 @@
   }
 
   function resetZoomForPage() {
-    zoomState = (isMobile && pageAllowsZoom(current)) ? 1 : 0;
+    zoomState = 0;
     applyZoomState();
   }
 
